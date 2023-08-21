@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JS Assignment</title>
+</head>
+<body>
+    <h1>JavaScript Assignment Operator</h1>
+
+    <h3>Assignment operators. An assignment operator assigns a value to its left operand based on the value of its right operand. The simple assignment operator is equal ( = ), which assigns the value of its right operand to its left operand.</h3>
+
+    <h4>Assignment operators assign values to JavaScript variables.</h4>
+
+    <p>*) Types of Assignment Operators</p>
+    <table>
+        <tr>
+            <th>Operator</th>
+            <th>Example</th>
+            <th>Same As</th>
+        </tr>
+        <tr>
+            <td>=</td>
+            <td>x = y</td>
+            <td>x = y</td>
+        </tr>
+        <tr>
+            <td>+=</td>
+            <td>x += y</td>
+            <td>x = x + y</td>
+        </tr>
+        <tr>
+            <td>-=</td>
+            <td>x -= y</td>
+            <td>x = x - y</td>
+        </tr>
+        <tr>
+            <td>*=</td>
+            <td>x *= y</td>
+            <td>x = x * y</td>
+        </tr>
+        <tr>
+            <td>/=</td>
+            <td>x /= y</td>
+            <td>x = x / y</td>
+        </tr>
+        <tr>
+            <td>%=</td>
+            <td>x %= y</td>
+            <td>x = x % y</td>
+        </tr>
+        <tr>
+            <td>**=</td>
+            <td>x **= y</td>
+            <td>x = x ** y</td>
+        </tr>
+    </table>
+
+    <h2>The = Operator</h2>
+    <p>*) The Simple Assignment Operator assigns a value to a variable.</p>
+    <pre>
+        let a = 10;
+        document.getElementById("one").innerHTML = "Value of a is: " + a;
+
+        let b = 20;
+        let c = b + 20;
+        document.getElementById("one_one").innerHTML = "Value of c is: " + c;
+    </pre>
+    <span>Output</span>
+    <div id="one"></div>
+    <div id="one_one"></div>
+    <hr>
+
+
+    <h2>The += Operator</h2>
+    <p>*) The Addition Assignment Operator adds a value to a variable.</p>
+    <pre>
+        let d = 10;
+        d += 20;
+        document.getElementById("two").innerHTML = "Value of d is: " + d;
+
+        let text = "Hello";
+        text += "World";
+        document.getElementById("two_two").innerHTML = "Value of text is: " + text;
+    </pre>
+    <span>Output</span>
+    <div id="two"></div>
+    <div id="two_two"></div>
+    <hr>
+
+
+    <h2>The -= Operator</h2>
+    <p>*) The Subtraction Assignment Operator subtracts a value from a variable.</p>
+    <pre>
+        let e = 45;
+        e -= 15;
+        document.getElementById("three").innerHTML = "Value of e is: " + e;
+
+        let number = 10;
+        let string = "num";
+        let vigesh = number -= string;
+        document.getElementById("three_three").innerHTML = "Value of vigesh is: " + vigesh;
+    </pre>
+    <span>Output</span>
+    <div id="three"></div>
+    <div id="three_three"></div>
+    <hr>
+
+    <h2>The *= Operator</h2>
+    <p>*) The Multiplication Assignment Operator multiplies a variable.</p>
+    <pre>
+        let f = 10;
+        f *= 20;
+        document.getElementById("four").innerHTML = "Value of f is: " + f;
+
+        let g = 10;
+        g *= "Vigesh";
+        document.getElementById("four_four").innerHTML = "Value of g is: " + g;
+    </pre>
+    <span>Output</span>
+    <div id="four"></div>
+    <div id="four_four"></div>
+    <hr>
+
+    <h2>The **= Operator</h2>
+    <p>*) The Exponentiation Assignment Operator raises a variable to the power of the operand.</p>
+    <pre>
+        let h = 10;
+        h **= 2;
+        document.getElementById("five").innerHTML = "Value of h is: " + h;
+    </pre>
+    <span>Output</span>
+    <div id="five"></div>
+    <hr>
+
+    <h2>The /= Operator</h2>
+    <p>*) The Division Assignment Operator divides a variable.</p>
+    <pre>
+        let i = 10;
+        i /= 5;
+        document.getElementById("six").innerHTML = "Value of i is: " + i;
+    </pre>
+    <span>Output</span>
+    <div id="six"></div>
+    <hr>
+
+    <h2>The %= Operator</h2>
+    <p>*) The Remainder Assignment Operator assigns a remainder to a variable. <br>Operator: x %= y<br>Meaning:  x  = x % y<br> </p>
+    <pre>
+        let j = 10;
+        j %= 2;
+        document.getElementById("seven").innerHTML = "Value of j is: " + j;
+
+        // Test if its divisible by 4
+        let num = 20;
+        if (num % 4 == 0){
+            document.getElementById("seven_seven").innerHTML = "True";
+        }
+
+        // Test for even number
+        if (num % 2 == 0){
+            document.getElementById("seven_seven_seven").innerHTML = "True -> " + "It's an even number"
+        }else{
+            document.getElementById("seven_seven_seven").innerHTML = "False -> " + "It's an odd number"
+        }
+
+        // Test for odd number
+        if (num % 2 == 0){
+            document.getElementById("seven_seven_seven_seven").innerHTML = "True -> " + "It's an even number"
+        }else{
+            document.getElementById("seven_seven_seven_seven").innerHTML = "False -> " + "It's an odd number"
+        }
+    </pre>
+    <span>Output</span>
+    <div id="seven"></div>
+    <div id="seven_seven"></div>
+    <div id="seven_seven_seven"></div>
+    <div id="seven_seven_seven_seven"></div>
+    <hr>
+
+
+    <h2>Shift Assignment Operators</h2>
+    <table>
+        <tr>
+            <th>Operator</th>
+            <th>Example</th>
+            <th>Same As</th>
+        </tr>
+        <tr>
+            <td><<=</td>
+            <td>x <<= 2</td>
+            <td>x = x << 2</td>
+        </tr>
+        <tr>
+            <td>>>=</td>
+            <td>x >>= 2</td>
+            <td>x = x >> 2</td>
+        </tr>
+        <tr>
+            <td> >>>=</td>
+            <td>x >>>= 2</td>
+            <td>x = x >>> 2</td>
+        </tr>
+    </table>
+
+
+    <h2>The <<= Operator</h2>
+    <p>*) The Left Shift Assignment Operator left shifts a variable. <br><br> *) This operator moves the specified number of bits to the left and assigns that result to the variable. <br><br> *) The left shift operator treats the integer stored in the variable to the operator’s left as a 32-bit binary number. <br><br> *) This can also be explained as the number is shifted to the left by the integer which is the right of the operator and assign the result to the variable.</p> <br>
+    <pre>
+        *) Example 1: In this example, we will see the implementation of the left shift assignment.
+
+        let k = 7;       // 00000000000000000000000000000111
+        k <<= 2;      // 00000000000000000000000000011100
+        document.getElementById("eight").innerHTML = "Value of k is: " + k;
+
+        *) Example 2: In this example, we will see left shift operator is not used for the negative number.
+
+        let l = 1;          // 00000000000000000000000000000001
+        l <<= -1;       // -10000000000000000000000000000000
+        document.getElementById("eight_eight").innerHTML = "Value of l is: " + l;
+
+        *) Example 3: In this example, we will see the implementation of the left shift assignment operator.
+
+        let m = 10;               // 00000000000000000000000000001010
+        let n = 5                  // 00000000000000000000000000000101
+        m = m <<= n;       // 00000000000000000000000101000000
+        document.getElementById("eight_eight_eight").innerHTML = "Value of m is: " + m;
+    </pre>
+    <span>Output</span>
+    <div id="eight"></div>
+    <div id="eight_eight"></div>
+    <div id="eight_eight_eight"></div>
+    <hr>
+
+    <h2>The >>= Operator</h2>
+    <p>*) The Right Shift Assignment Operator right shifts a variable (signed). <br><br> *) This operator shifts the first operand to the right and assigns the result to the variable <br><br> *) It can also be explained as shifting the first operand to the right in a specified amount of bits which is the second operand integer and then assigning the result to the first operand.</p>
+    <pre>
+        Example 1: In this example, we will see the implementation of the right shift assignment.
+
+        let o = 7;        // 00000000000000000000000000000111
+        o >>= 2;       // 00000000000000000000000000011100
+        document.getElementById("nine").innerHTML = "Value of k is: " + k;
+
+        Example 2: In this example, we will see assigning the right shift operator to the variable.
+
+        let p = 10;            // 00000000000000000000000000001010
+        let q = 5             // 00000000000000000000000000000101
+        p = p >> q;      // 00000000000000000000000101000000
+        document.getElementById("nine_nine").innerHTML = "Value of m is: " + m;
+    </pre>
+    <span>Output</span>
+    <div id="nine"></div>
+    <div id="nine_nine"></div>
+    <hr>
+
+    <h2>The >>>= Operator</h2>
+    <p>*) The Unsigned Right Shift Assignment Operator right shifts a variable (unsigned). <br><br> *) JavaScript Zero Fill Right Shift Operator or Unsigned Right Shift Operator(>>>) is used for operating on the two operands. <br><br> *) The first operand is the number and the right operand specifies the bits to shift towards the right modulo 32. <br><br> *) In this way, the excess bits which are shifted towards the right are discarded and zero bits are added towards the left, as a result, the sign bit is now zero and the number becomes positive always.</p>
+    <pre>
+        let r = -100;
+        r >>>= 5;
+        document.getElementById("ten").innerHTML = "Value of r is: " + r;
+    </pre>
+    <span>Output</span>
+    <div id="ten"></div>
+    <hr>
+
+    <h2>Bitwise Assignment Operators</h2>
+    <table>
+        <tr>
+            <th>Operator</th>
+            <th>Example</th>
+            <th>Same As</th>
+        </tr>
+        <tr>
+            <td>&=</td>
+            <td>x &= y</td>
+            <td>x = x & y</td>
+        </tr>
+        <tr>
+            <td>^=</td>
+            <td>x ^= y</td>
+            <td>x = x ^ y</td>
+        </tr>
+        <tr>
+            <td>|=</td>
+            <td>x |= y</td>
+            <td>x = x | y</td>
+        </tr>
+    </table>
+
+    <h2>The &= Operator</h2>
+    <p>*) The Bitwise AND Assignment Operator does a bitwise AND operation on two operands and assigns the result to the the variable. <br><br> *) This operator uses the binary representation of both operands and performs the bitwise AND operation and then assigns the result to the left operand. <br><br> *) This can also be explained as applying the logical AND operation to the first operand and second operand and after that assigning the result to the first operand.</p>
+    <pre>
+        let s = 10;
+        s &= 2;
+        document.getElementById("eleven").innerHTML = "Value of s is: " + s;
+    </pre>
+    <span>Output</span>
+    <div id="eleven"></div>
+    <hr>
+
+    <h2>The |= Operator</h2>
+    <p>*) The Bitwise OR Assignment Operator in Javascript is represented by (|=). <br><br> *) This operator is used to perform a bitwise OR operation on both operands and assign the result to the left operands.</p>
+    <pre>
+        let t = 10;
+        t |= 2;
+        document.getElementById("twelve").innerHTML = "Value of t is: " + t;
+    </pre>
+    <span>Output</span>
+    <div id="twelve"></div>
+    <hr>
+
+    <h2>The ^= Operator</h2>
+    <p>The Javascript Bitwise XOR assignment is represented by (^=). It is used to perform a bitwise XOR operation on both operands and assign the result to the left operand.</p>
+    <pre>
+        let u = 10;
+        u ^= 2;
+        document.getElementById("thirteen").innerHTML = "Value of u is: " + u;
+    </pre>
+    <span>Output</span>
+    <div id="thirteen"></div>
+
+    <script src="function.js"></script>
+</body>
+</html>
